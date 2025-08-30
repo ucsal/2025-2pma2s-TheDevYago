@@ -9,7 +9,8 @@ public class ReceiptService {
 		double tax = calculartax.calcular(subtotal);
 		double total = subtotal + tax;
 
-		return formatarrecibo.format(order, subtotal, tax, total);
+		String recibofinal = formatarrecibo.format(order, subtotal, tax, total);
 
+		return recibofinal;
 	}
 }
